@@ -1,0 +1,17 @@
+<% content_for :menu do %>
+  <li>
+    <%= link_to "Edit This Category", edit_category_path(@category) %>
+  </li>
+  <li>
+    <%= link_to "Delete This Category", category_path(@category),
+      :data => {:confirm => "Are you sure?",
+          :method => "delete"} %>
+  </li>
+<% end %>
+
+<div class="category">
+  <div class="full-width">
+    <h1><%= @category.name %> Projects</h1>
+  </div>
+
+</div>
