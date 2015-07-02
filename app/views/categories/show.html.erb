@@ -1,5 +1,9 @@
 <% content_for :menu do %>
   <li>
+    <%= link_to "Add a Project", new_category_project_path(@category) %>
+  </li>
+  <li role="separator" class="divider"></li>
+  <li>
     <%= link_to "Edit This Category", edit_category_path(@category) %>
   </li>
   <li>
@@ -9,9 +13,11 @@
   </li>
 <% end %>
 
-<div class="category">
-  <div class="full-width">
-    <h1><%= @category.name %> Projects</h1>
-  </div>
-
+<div class="category full-width">
+  <h1><%= @category.name %> Projects</h1>
+  <ul>
+    <% @category.projects.each do |project| %>
+      <li><%= project.name %></li>
+    <% end %>
+  </ul>
 </div>
