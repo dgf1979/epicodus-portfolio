@@ -1,0 +1,14 @@
+<% content_for :menu do %>
+  <li>
+    <%= link_to "Edit This Project", edit_category_project_path(@category, @project) %>
+  </li>
+  <li>
+    <%= link_to "Delete This Project", category_project_path(@category, @project),
+      :data => {:confirm => "Are you sure?",
+          :method => "delete"} %>
+  </li>
+<% end %>
+
+<h2><%= @project.name %></h2>
+<h2><%= @project.description %></h2>
+<h2><%= @project.url %></h2>

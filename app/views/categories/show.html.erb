@@ -17,7 +17,7 @@
   <h1><%= @category.name %> Projects</h1>
   <ul>
     <% @category.projects.each do |project| %>
-      <li><%= project.name %></li>
+      <li><%= link_to project.name, category_project_path(@category, project) %></li>
     <% end %>
   </ul>
 </div>

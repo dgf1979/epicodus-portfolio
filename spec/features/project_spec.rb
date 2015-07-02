@@ -16,3 +16,13 @@ describe "the add a project process" do
     expect(page).to have_content 'errors'
   end
 end
+
+describe "the edit a project process" do
+  project = category.projects.create({ name: "Prototype"})
+  it "edits a project" do
+    visit edit_category_project_path(category, project)
+    fill_in 'Name', :with => 'Hello World'
+    click_on 'Update Project'
+    expect(page).to have_content 'Hello World'
+  end
+end

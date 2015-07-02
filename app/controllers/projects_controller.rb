@@ -16,6 +16,34 @@ class ProjectsController < ApplicationController
     end
   end
 
+  def show
+    @category = Category.find(params[:category_id])
+    @project = Project.find(params[:id])
+  end
+
+  def edit
+    @category = Category.find(params[:category_id])
+    @project = Project.find(params[:id])
+    render :edit
+  end
+
+  def update
+    @project = Project.find(params[:id])
+    if @project.update(project_params)
+      flash[:notice] = "Project Updated"
+      redirect_to category_path(@project.category_id)
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @category = Category.find(params[:category_id])
+    @project = Project.find(params[:id])
+    @project.destroy
+    redirect_to category_path(@project.category_id)
+  end
+
   private
   def project_params
     params.require(:project).permit(:name, :description, :url)
