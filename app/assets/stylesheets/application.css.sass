@@ -6,6 +6,13 @@
 @import "bootstrap-sprockets"
 @import "bootstrap"
 
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:700)
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0.1em
+  font-family: 'Inconsolata'
+
 #errors
   border-radius: 4px
   color: #FF0000
@@ -27,39 +34,48 @@ span.error
   color: orange
 
 div.form-wrapper
-  width: 100%
-  text-align: center
   padding: 4em
 
 div.form-container
-  max-width: 400px
-  margin: auto
+  max-width: 600px
+  min-width: 300px
 
 div.full-width
   width: 100%
 
+div.center-contents
+  text-align: center
+
+div.center-inside
+  margin: auto
+  display: inline-block
+
+.faded-box
+  background-color: rgba(255, 255, 255, 0.6)
+  padding: 1em
+
 div#profile
   width: 100%
   padding: 4px
-  background-color: rgba(255, 255, 255, 0.4)
 
 div#profile img
   width: 100%
 
-div#profile ul
+ul
   margin-top: 2em
   margin-bottom: 2em
   padding-left: 2em
   padding-right: 2em
   list-style: none
 
+li
+  font-weight: bold
+  font-size: 1.2em
+
 table#category
   font-size: 1.4em
   width: 100%
   margin-top: 2em
-
-table#category tr
-  background-color: rgba(255, 255, 255, 0.4)
 
 table#category td
   padding: 0.1em 1em 0.1em 1em

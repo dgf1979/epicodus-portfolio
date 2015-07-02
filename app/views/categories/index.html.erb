@@ -1,10 +1,9 @@
 <% content_for :menu do %>
    <li><%= link_to "Add Category", new_category_path %></a></li>
-   <li role="separator" class="divider"></li>
 <% end %>
 
 <div class="col-md-9">
-  <table id="category">
+  <table id="category" class="faded-box">
     <% @categories.each do |category| %>
       <tr>
         <td class="name right">
@@ -19,7 +18,7 @@
 </div>
 
 <div class="col-md-3">
-  <div id="profile">
+  <div id="profile" class="faded-box">
     <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAALSAAAAJDA5NDhhNjc3LWFkMTYtNDhjNS1hN2U5LTZhNGU4ODYzOGE3YQ.jpg" alt="" />
     <ul>
       <li>Drew Finstrom</li>

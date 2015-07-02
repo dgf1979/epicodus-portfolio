@@ -13,11 +13,13 @@
   </li>
 <% end %>
 
-<div class="category full-width">
-  <h1><%= @category.name %> Projects</h1>
-  <ul>
-    <% @category.projects.each do |project| %>
-      <li><%= link_to project.name, category_project_path(@category, project) %></li>
-    <% end %>
-  </ul>
+<div class="full-width center-contents">
+  <div class="faded-box center-inside">
+    <h1><%= @category.name %> Projects</h1>
+    <ul>
+      <% @category.projects.each do |project| %>
+        <li><%= link_to project.name, category_project_path(@category, project) %></li>
+      <% end %>
+    </ul>
+  </div>
 </div>

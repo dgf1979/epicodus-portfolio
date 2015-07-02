@@ -9,6 +9,12 @@
   </li>
 <% end %>
 
-<h2><%= @project.name %></h2>
-<h2><%= @project.description %></h2>
-<h2><%= @project.url %></h2>
+<div class="full-width center-contents">
+  <div class="faded-box center-inside">
+    <h2><%= @project.name %></h2>
+    <p>
+      <%= @project.description %></h2>
+    </p>
+    <h4><a href="<%= @project.url %>" target="_new"><%= @project.url %></a></h4>
+  </div>
+</div>

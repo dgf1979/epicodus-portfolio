@@ -33,6 +33,7 @@ class ProjectsController < ApplicationController
       flash[:notice] = "Project Updated"
       redirect_to category_path(@project.category_id)
     else
+      flash[:error] = "Project update failed"
       render :edit
     end
   end
