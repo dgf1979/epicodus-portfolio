@@ -39,10 +39,6 @@
                   </ul>
                 </li>
               </ul>
-              <div class="flash">
-                <span class="info"></span>
-                <span class="error"></span>
-              </div>
               <form style="display: none" class="navbar-form navbar-left" role="search">
                 <div class="form-group">
                   <input type="text" class="form-control" placeholder="Search">
@@ -54,9 +50,7 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Catgeries</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
+                    <li><%= link_to "Add Category", new_category_path %></a></li>
                     <li role="separator" class="divider"></li>
                     <li><a href="#">Separated link</a></li>
                   </ul>
@@ -65,6 +59,10 @@
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-fluid -->
         </nav>
+      </div>
+      <div class="flash">
+        <span class="info"><%= flash[:alert] %></span>
+        <span class="error"><%= flash[:error] %></span>
       </div>
     </div>
     <div class="row">
