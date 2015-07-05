@@ -14,7 +14,7 @@ class CategoriesController < ApplicationController
       flash[:notice] = "'#{@category.name}' add success."
       redirect_to categories_path
     else
-      flash[:error] = "Category add failed"
+      flash[:alert] = "Category add failed"
       render :new
     end
   end
@@ -33,7 +33,7 @@ class CategoriesController < ApplicationController
       flash[:notice] = "Category Updated"
       redirect_to categories_path
     else
-      flash[:error] = "Category update failed"
+      flash[:alert] = "Category update failed"
       render :edit
     end
   end

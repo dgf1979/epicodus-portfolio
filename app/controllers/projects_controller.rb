@@ -11,7 +11,7 @@ class ProjectsController < ApplicationController
       flash[:notice] = "'#{@project.name}' add success."
       redirect_to category_path(@category)
     else
-      flash[:error] = "Category add failed"
+      flash[:alert] = "Category add failed"
       render :new
     end
   end
@@ -33,7 +33,7 @@ class ProjectsController < ApplicationController
       flash[:notice] = "Project Updated"
       redirect_to category_path(@project.category_id)
     else
-      flash[:error] = "Project update failed"
+      flash[:alert] = "Project update failed"
       render :edit
     end
   end

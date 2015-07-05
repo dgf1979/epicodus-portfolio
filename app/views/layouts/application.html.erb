@@ -58,14 +58,15 @@
           </div><!-- /.container-fluid -->
         </nav>
       </div>
-      <div class="flash">
-        <span class="info"><%= flash[:alert] %></span>
-        <span class="error"><%= flash[:error] %></span>
-      </div>
     </div>
     <div class="row">
       <%= yield %>
     </div>
+  </div>
+
+  <div class="flash">
+    <span class="info"><%= flash[:notice] %></span>
+    <span class="error"><%= flash[:alert] %></span>
   </div>
 </body>
 </html>
