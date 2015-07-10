@@ -1,6 +1,4 @@
-<h1>Editing Blog</h1>
-
-<%= render 'form' %>
-
-<%= link_to 'Show', @blog %> |
-<%= link_to 'Back', blogs_path %>
+<div class="col-md-6 col-md-offset-3 faded-box">
+  <h2>Editing Post from: <%= @blog.created_at %></h2>
+  <%= render 'form' %>
+</div>
