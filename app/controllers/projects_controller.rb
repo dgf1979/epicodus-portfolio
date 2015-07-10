@@ -43,6 +43,7 @@ class ProjectsController < ApplicationController
     @category = Category.find(params[:category_id])
     @project = Project.find(params[:id])
     @project.destroy
+    flash[:notice] = "Project Deleted"
     redirect_to category_path(@project.category_id)
   end
 

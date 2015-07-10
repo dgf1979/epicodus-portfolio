@@ -1,4 +1,5 @@
 require 'rails_helper'
+require 'warden_helper'
 
 describe "the add a category process" do
   it "adds a new category" do
@@ -40,4 +41,17 @@ describe "the edit a category process" do
     expect(page).to have_content 'error'
   end
 
+end
+
+describe "the delete a category process" do
+  category = Category.create({ name: "Ruby" })
+
+  it "should delete a category" do
+    user = User.create({ email: "test@test.com", password: "password", admin: true })
+    login_as user, :scope => :user
+    visit category_path(category)
+    click_on "Admin"
+    click_on "Delete This Category"
+    expect(page).to have_content 'Category Deleted'
+  end
 end

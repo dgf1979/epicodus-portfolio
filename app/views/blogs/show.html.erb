@@ -37,7 +37,8 @@
         <div class="comment-edit">
           <%= button_to "Delete", blog_comment_path(@blog, comment),
               method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-warning" %>
-          <%= button_to "Edit", edit_blog_comment_path(@blog, comment), class: "btn btn-primary" %>
+
+          <%= button_to "Edit", edit_blog_comment_path(@blog, comment), method: :get, class: "btn btn-primary" %>
         </div>
         <% end %>
       </div>
