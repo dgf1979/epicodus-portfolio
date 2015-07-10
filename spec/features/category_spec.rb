@@ -15,6 +15,14 @@ describe "the add a category process" do
   end
 end
 
+describe "reading a category" do
+  it "views a category" do
+    category = Category.create({ name: 'Ruby'})
+    visit category_path(category)
+    expect(page).to have_content 'Ruby'
+  end
+end
+
 describe "the edit a category process" do
   category = Category.create({ name: "Ruby" })
 
@@ -24,4 +32,12 @@ describe "the edit a category process" do
     click_on 'Update Category'
     expect(page).to have_content 'JavaScript'
   end
+
+  it "fails to edit a category" do
+    visit edit_category_path(category)
+    fill_in 'Name', :with => ''
+    click_on 'Update Category'
+    expect(page).to have_content 'error'
+  end
+
 end

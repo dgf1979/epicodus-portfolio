@@ -17,6 +17,14 @@ describe "the add a project process" do
   end
 end
 
+describe "reading project data" do
+  project = category.projects.create({ name: "Prototype"})
+  it "displays an individual project" do
+    visit category_project_path(category, project)
+    expect(page).to have_content 'Prototype'
+  end
+end
+
 describe "the edit a project process" do
   project = category.projects.create({ name: "Prototype"})
   it "edits a project" do
@@ -24,5 +32,12 @@ describe "the edit a project process" do
     fill_in 'Name', :with => 'Hello World'
     click_on 'Update Project'
     expect(page).to have_content 'Hello World'
+  end
+
+  it "fails to update a project" do
+    visit edit_category_project_path(category, project)
+    fill_in 'Name', :with => ''
+    click_on 'Update Project'
+    expect(page).to have_content 'error'
   end
 end

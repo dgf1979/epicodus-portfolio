@@ -28,6 +28,7 @@ class ProjectsController < ApplicationController
   end
 
   def update
+    @category = Category.find(params[:category_id])
     @project = Project.find(params[:id])
     if @project.update(project_params)
       flash[:notice] = "Project Updated"
