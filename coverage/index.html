@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-07-10T10:37:52-07:00">2015-07-10T10:37:52-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-07-10T13:52:28-07:00">2015-07-10T13:52:28-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">96.97%</span></span>
+    (<span class="covered_percent"><span class="green">95.36%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.13
+         1.11
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>33</b> files in total.
-    <b>231</b> relevant lines. 
-    <span class="green"><b>224</b> lines covered</span> and
-    <span class="red"><b>7</b> lines missed </span>
+    <b>35</b> files in total.
+    <b>237</b> relevant lines. 
+    <span class="green"><b>226</b> lines covered</span> and
+    <span class="red"><b>11</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -82,12 +82,12 @@
       
       <tr>
         <td class="strong"><a href="#2da7b064cc54f6005f21a58a2cb06ab7da6896dc" class="src_link" title="app/helpers/application_helper.rb">app/helpers/application_helper.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>2</td>
-        <td>1</td>
-        <td>1</td>
-        <td>0</td>
-        <td>1.0</td>
+        <td class="red strong">42.86 %</td>
+        <td>11</td>
+        <td>7</td>
+        <td>3</td>
+        <td>4</td>
+        <td>0.4</td>
       </tr>
       
       <tr>
@@ -301,6 +301,16 @@
       </tr>
       
       <tr>
+        <td class="strong"><a href="#b02f29c1dc5ae8a0a7914b5a3c3d22241a3c23c2" class="src_link" title="spec/features/blog_spec.rb">spec/features/blog_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0.0</td>
+      </tr>
+      
+      <tr>
         <td class="strong"><a href="#3a80f6e719ef9c3b93e710e5b9abedff6e9a14dc" class="src_link" title="spec/features/category_spec.rb">spec/features/category_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>43</td>
@@ -308,6 +318,16 @@
         <td>28</td>
         <td>0</td>
         <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#97914104c38c01b1c86db0a849a1ad2fccf980d1" class="src_link" title="spec/features/comment_spec.rb">spec/features/comment_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0.0</td>
       </tr>
       
       <tr>
@@ -1107,11 +1127,11 @@
         <div class="source_table" id="2da7b064cc54f6005f21a58a2cb06ab7da6896dc">
   <div class="header">
     <h3>app/helpers/application_helper.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="red">42.86 %</span> covered</h4>
     <div>
-      <b>1</b> relevant lines. 
-      <span class="green"><b>1</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>7</b> relevant lines. 
+      <span class="green"><b>3</b> lines covered</span> and
+      <span class="red"><b>4</b> lines missed.</span>
     </div>
   </div>
   
@@ -1124,7 +1144,61 @@
           <code class="ruby">module ApplicationHelper</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="2">
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def human_date(artime)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="3">
+          
+          
+          <code class="ruby">    t = artime.to_time</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
+          
+          <code class="ruby">    return t.localtime.strftime(&quot;%b. %d&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="6">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def human_time(artime)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="8">
+          
+          
+          <code class="ruby">    t = artime.to_time</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">    return t.localtime.strftime(&quot;%I:%M %p&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
           
           
           <code class="ruby">end</code>
@@ -4230,6 +4304,24 @@
   </pre>
 </div>
       
+        <div class="source_table" id="b02f29c1dc5ae8a0a7914b5a3c3d22241a3c23c2">
+  <div class="header">
+    <h3>spec/features/blog_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>0</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+    </ol>
+  </pre>
+</div>
+      
         <div class="source_table" id="3a80f6e719ef9c3b93e710e5b9abedff6e9a14dc">
   <div class="header">
     <h3>spec/features/category_spec.rb</h3>
@@ -4501,6 +4593,24 @@
           
           <code class="ruby">end</code>
         </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="97914104c38c01b1c86db0a849a1ad2fccf980d1">
+  <div class="header">
+    <h3>spec/features/comment_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>0</b> relevant lines. 
+      <span class="green"><b>0</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
       
     </ol>
   </pre>

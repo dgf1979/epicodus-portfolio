@@ -6,3 +6,25 @@
   float: right;
   margin-left: 0.5em;
 }
+
+.comment .author {
+  text-size: 0.8em;
+  font-weight: bold;
+}
+
+.text {
+  background-color: white;
+  padding: 0.5em;
+}
+
+.post .text:first-of-type:first-letter {
+  font-weight: bold;
+}
+
+.post .text {
+  font-size: 1.6em;
+}
+
+.comment .text {
+  font-style: italic;
+}

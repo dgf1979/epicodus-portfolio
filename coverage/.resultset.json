@@ -1,6 +1,9 @@
 {
   "RSpec": {
     "coverage": {
+      "/home/drew/Desktop/epicodus-portfolio/spec/features/blog_spec.rb": [
+
+      ],
       "/home/drew/Desktop/epicodus-portfolio/spec/features/category_spec.rb": [
         1,
         null,
@@ -562,6 +565,15 @@
       ],
       "/home/drew/Desktop/epicodus-portfolio/app/helpers/application_helper.rb": [
         1,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
         null
       ],
       "/home/drew/Desktop/epicodus-portfolio/app/helpers/blogs_helper.rb": [
@@ -577,6 +589,9 @@
         1,
         1,
         null
+      ],
+      "/home/drew/Desktop/epicodus-portfolio/spec/features/comment_spec.rb": [
+
       ],
       "/home/drew/Desktop/epicodus-portfolio/spec/features/project_spec.rb": [
         1,
@@ -801,6 +816,6 @@
         null
       ]
     },
-    "timestamp": 1436549872
+    "timestamp": 1436561548
   }
 }
