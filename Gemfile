@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails'
+gem 'rails_12factor'
 gem 'pg'
 gem 'sass-rails'
 gem 'uglifier'
@@ -9,7 +10,6 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
-gem 'capybara'
 gem 'pry'
 gem 'devise'
 
@@ -23,7 +23,6 @@ end
 group :test, :development do
   gem 'rspec-rails'
   gem 'launchy'
-  gem 'shoulda-matchers'
   gem 'capybara'
   gem 'simplecov', require: false
 end
@@ -31,3 +30,5 @@ end
 group :test do
   gem 'shoulda-matchers'
 end
+
+ruby "2.2.1p85"
