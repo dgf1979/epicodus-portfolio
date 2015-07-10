@@ -6,7 +6,7 @@
   <div class="faded-box">
     <ul class="blog-post-list">
       <% @blogs.each do |blog| %>
-        <li><%= link_to blog.created_at, blog_path(blog) %></li>
+        <li><%= link_to "#{human_date(blog.created_at)} @ #{human_time(blog.created_at)}" , blog_path(blog) %></li>
       <% end %>
     </ul>
   </div>

@@ -11,7 +11,7 @@
 
 <div class="col-md-6 col-md-offset-3 faded-box">
   <p>
-    <h2><%= @blog.created_at %></h2>
+    <h2>Post for <%= human_date(@blog.created_at) %> @ <%= human_time(@blog.created_at) %></h2>
     <%= @blog.text %>
   </p>
   <div class="comments">
@@ -24,7 +24,9 @@
     <% @blog.comments.each do |comment| %>
       <hr>
       <div class="comment">
-        At: <span class="posted-on"><%= comment.created_at %></span> <span class="author"><%= comment.user.email %></span> wrote:
+        At <span class="posted-on"><%= human_time(comment.created_at) %>
+          on <%= human_date(comment.created_at) %> </span> 
+        <span class="author"><%= comment.user.email %></span> wrote:
         <div class="text">
           <%= comment.text %>
         </div>
