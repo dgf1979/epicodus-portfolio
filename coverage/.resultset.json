@@ -558,6 +558,7 @@
         1,
         1,
         null,
+        null,
         1,
         1,
         1,
@@ -576,13 +577,13 @@
       "/home/drew/Desktop/epicodus-portfolio/app/helpers/application_helper.rb": [
         1,
         1,
-        125,
-        125,
+        128,
+        128,
         null,
         null,
         1,
-        125,
-        125,
+        128,
+        128,
         null,
         null
       ],
@@ -817,6 +818,7 @@
       ],
       "/home/drew/Desktop/epicodus-portfolio/app/models/comment.rb": [
         1,
+        38,
         1,
         1,
         1,
@@ -850,6 +852,7 @@
         null,
         null,
         1,
+        6,
         null,
         null,
         null,
@@ -1073,6 +1076,6 @@
         null
       ]
     },
-    "timestamp": 1436569691
+    "timestamp": 1436633733
   }
 }

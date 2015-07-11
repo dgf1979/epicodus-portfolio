@@ -8,6 +8,7 @@ class BlogsController < ApplicationController
 
   # GET /blogs/1
   def show
+    @comment = Comment.new
   end
 
   # GET /blogs/new

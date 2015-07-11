@@ -1,11 +1,12 @@
 <%= form_for [@blog, @comment], :html => {:class => "form"} do |f| %>
   <%= render 'layouts/errors', :object => @comment %>
 
-  <div class="field">
-    <%= f.label :text %><br>
-    <%= f.text_field :text %>
+  <div class="form-group">
+    <%= f.label :text, style: "display: none;"  %><br>
+    <%= f.text_area :text, rows: 6, class: "form-control" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit class: "btn btn-primary btn-lg btn-block" %>
   </div>
+
 <% end %>
