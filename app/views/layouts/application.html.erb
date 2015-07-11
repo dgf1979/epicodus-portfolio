@@ -20,12 +20,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="/">Portfolio</a>
+              <a class="navbar-brand" href="/">Drew Finstrom</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
               <ul class="nav navbar-nav">
                 <li><%= link_to "Blog", blogs_path %></li>
+                <li><%= link_to "Projects", categories_path %></li>
                 <li style="display: none" class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -69,10 +70,19 @@
       <%= yield %>
     </div>
   </div>
-
+  <div class="underlay"></div>
   <div class="flash">
     <span class="info"><%= flash[:notice] %></span>
     <span class="error"><%= flash[:alert] %></span>
   </div>
+
+  <script charset="utf-8">
+    $(document).ready(function() {
+      // this is a weirdly clever method of setting the bootstrap 'active' class on the nav link for the current route.
+      routeParts = window.location.pathname.split('/');
+      $('ul.nav li a[href="/' + routeParts[1] + '"]').parent("li").addClass("active");
+      // I'm shocked it worked the first time once I hit on the idea.
+    });
+  </script>
 </body>
 </html>
