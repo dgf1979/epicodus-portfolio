@@ -67,11 +67,34 @@
         </nav>
       </div>
     </div>
+
     <div class="row">
-      <%= yield %>
+      <div class="col-md-6 col-md-offset-3">
+        <%= yield %>
+      </div>
+
+      <div class="col-md-3">
+        <div id="profile" class="faded-box">
+          <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAALSAAAAJDA5NDhhNjc3LWFkMTYtNDhjNS1hN2U5LTZhNGU4ODYzOGE3YQ.jpg" alt="" />
+          <ul class="details">
+            <li>Drew Finstrom</li>
+            <li>drew@fakeaddress.net</li>
+            <li>503-123-4444</li>
+            <li>Portland, OR 97232</li>
+            <li><a href="http://github.com/dgf1979" target="_new">Github</a></li>
+            <li><a href="http://linkedin.com/in/andrewfinstrom" target="_new">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+
     </div>
+
   </div>
+
   <div class="underlay"></div>
+
   <div class="flash">
     <span class="info"><%= flash[:notice] %></span>
     <span class="error"><%= flash[:alert] %></span>

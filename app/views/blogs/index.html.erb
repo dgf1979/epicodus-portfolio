@@ -2,12 +2,10 @@
    <li><%= link_to "Add Post", new_blog_path %></a></li>
 <% end %>
 
-<div class="col-md-6 col-md-offset-3">
-  <div class="faded-box">
-    <ul class="blog-post-list">
-      <% @blogs.each do |blog| %>
-        <li><%= link_to "#{human_date(blog.created_at)} @ #{human_time(blog.created_at)}" , blog_path(blog) %></li>
-      <% end %>
-    </ul>
-  </div>
+<div class="faded-box">
+  <ul class="blog-post-list">
+    <% @blogs.each do |blog| %>
+      <li><%= link_to "#{human_date(blog.created_at)} @ #{human_time(blog.created_at)}" , blog_path(blog) %></li>
+    <% end %>
+  </ul>
 </div>
