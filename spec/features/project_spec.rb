@@ -7,6 +7,7 @@ describe "the add a project process" do
   it "adds a new project" do
     visit new_category_project_path(category)
     fill_in 'Name', :with => 'ToDo'
+    fill_in 'Url', :with => 'http://github.com'
     click_on 'Create Project'
     expect(page).to have_content 'ToDo'
   end
@@ -19,7 +20,7 @@ describe "the add a project process" do
 end
 
 describe "reading project data" do
-  project = category.projects.create({ name: "Prototype"})
+  project = category.projects.create({ name: "Prototype", url: 'http://www.github.com'})
   it "displays an individual project" do
     visit category_project_path(category, project)
     expect(page).to have_content 'Prototype'
@@ -27,7 +28,7 @@ describe "reading project data" do
 end
 
 describe "the edit a project process" do
-  project = category.projects.create({ name: "Prototype"})
+  project = category.projects.create({ name: "Prototype", url: 'http://www.github.com'})
   it "edits a project" do
     visit edit_category_project_path(category, project)
     fill_in 'Name', :with => 'Hello World'
@@ -44,7 +45,7 @@ describe "the edit a project process" do
 end
 
 describe "the delete a project process" do
-  project = category.projects.create({ name: "Prototype"})
+  project = category.projects.create({ name: "Prototype", url: 'http://www.github.com'})
   it "should delete a blog post" do
     user = User.create({ email: "test@test.com", password: "password", admin: true })
     login_as user, :scope => :user
