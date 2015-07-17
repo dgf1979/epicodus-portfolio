@@ -40,7 +40,7 @@ function setTZ() {
 
    $.ajax({
        type: "POST",
-       url: "/session",
+       url: "/session/timezone",
        dataType: "json",
        success: function (msg) {
            if (msg) {
