@@ -7,6 +7,7 @@
 var ready;
 ready = function() {
   "use strict";
+
   $("#refs-show").click(function() {
     $(".references").slideDown( 450, function() {
       $("#refs-hide").show();
@@ -19,6 +20,10 @@ ready = function() {
     });
     $(this).hide();
   });
+
+  // set bootstrap 'active' class on the nav link for the current route.
+  routeParts = window.location.pathname.split('/');
+  $('ul.nav li a[href="/' + routeParts[1] + '"]').parent("li").addClass("active");
 };
 
 $(document).ready(ready);
