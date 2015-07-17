@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/epicodus-portfolio/spec/features/blog_spec.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/spec/features/blog_spec.rb": [
         1,
         1,
         null,
@@ -59,7 +59,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/spec/rails_helper.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/spec/rails_helper.rb": [
         null,
         1,
         1,
@@ -114,14 +114,14 @@
         1,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/config/environment.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/config/application.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/config/application.rb": [
         1,
         null,
         1,
@@ -158,12 +158,12 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/config/boot.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/config/environments/test.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/config/environments/test.rb": [
         1,
         null,
         null,
@@ -207,7 +207,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/config/initializers/assets.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -220,7 +220,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/config/initializers/backtrace_silencers.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -229,12 +229,12 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/config/initializers/cookies_serializer.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/config/initializers/cookies_serializer.rb": [
         null,
         null,
         1
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/config/initializers/devise.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/config/initializers/devise.rb": [
         null,
         null,
         1,
@@ -501,13 +501,13 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/config/initializers/filter_parameter_logging.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/config/initializers/inflections.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -525,18 +525,18 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/config/initializers/mime_types.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/config/initializers/session_store.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/config/initializers/wrap_parameters.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -552,7 +552,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/config/routes.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/config/routes.rb": [
         1,
         1,
         1,
@@ -565,7 +565,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/app/models/user.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/app/models/user.rb": [
         1,
         null,
         null,
@@ -574,28 +574,28 @@
         1,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/app/helpers/application_helper.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/app/helpers/application_helper.rb": [
         1,
         1,
-        16,
-        16,
+        134,
+        134,
         null,
         null,
         1,
-        16,
-        16,
+        134,
+        134,
         null,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/app/helpers/blogs_helper.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/app/helpers/blogs_helper.rb": [
         1,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/app/helpers/comments_helper.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/app/helpers/comments_helper.rb": [
         1,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/spec/warden_helper.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/spec/warden_helper.rb": [
         1,
         1,
         null,
@@ -608,13 +608,13 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/app/models/blog.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/app/models/blog.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/spec/features/category_spec.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/spec/features/category_spec.rb": [
         1,
         1,
         null,
@@ -663,59 +663,6 @@
         1,
         1,
         null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/Guest/Desktop/epicodus-portfolio/app/models/category.rb": [
-        1,
-        1,
-        1,
-        null
-      ],
-      "/Users/Guest/Desktop/epicodus-portfolio/spec/features/comment_spec.rb": [
-        1,
-        1,
-        null,
-        1,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
         1,
         1,
         1,
@@ -726,36 +673,19 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/spec/features/project_spec.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/app/models/category.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/drew/Desktop/epicodus-portfolio/spec/features/comment_spec.rb": [
         1,
         1,
         null,
         1,
         null,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
         1,
         1,
         1,
@@ -770,10 +700,21 @@
         1,
         1,
         1,
+        1,
         null,
         null,
         null,
         1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
         1,
         1,
         1,
@@ -785,7 +726,66 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/app/models/project.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/spec/features/project_spec.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/drew/Desktop/epicodus-portfolio/app/models/project.rb": [
         1,
         1,
         1,
@@ -793,7 +793,7 @@
         1,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/spec/models/blog_spec.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/spec/models/blog_spec.rb": [
         1,
         null,
         1,
@@ -801,7 +801,7 @@
         2,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/spec/models/category_spec.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/spec/models/category_spec.rb": [
         1,
         null,
         1,
@@ -809,7 +809,7 @@
         2,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/spec/models/comment_spec.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/spec/models/comment_spec.rb": [
         1,
         null,
         1,
@@ -818,7 +818,7 @@
         2,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/app/models/comment.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/app/models/comment.rb": [
         1,
         38,
         1,
@@ -828,7 +828,7 @@
         1,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/spec/models/project_spec.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/spec/models/project_spec.rb": [
         1,
         null,
         1,
@@ -839,14 +839,14 @@
         2,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/spec/models/user_spec.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/spec/models/user_spec.rb": [
         1,
         null,
         1,
         2,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/app/controllers/blogs_controller.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/app/controllers/blogs_controller.rb": [
         1,
         1,
         null,
@@ -907,14 +907,14 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/app/controllers/application_controller.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/app/controllers/categories_controller.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/app/controllers/categories_controller.rb": [
         1,
         null,
         1,
@@ -968,7 +968,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/app/controllers/comments_controller.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/app/controllers/comments_controller.rb": [
         1,
         1,
         1,
@@ -985,11 +985,14 @@
         null,
         1,
         2,
+        2,
+        2,
+        2,
+        1,
         null,
         2,
         1,
         null,
-        1,
         null,
         null,
         null,
@@ -1024,7 +1027,7 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/epicodus-portfolio/app/controllers/projects_controller.rb": [
+      "/home/drew/Desktop/epicodus-portfolio/app/controllers/projects_controller.rb": [
         1,
         1,
         2,
@@ -1081,6 +1084,6 @@
         null
       ]
     },
-    "timestamp": 1437088799
+    "timestamp": 1437152164
   }
 }
