@@ -4,7 +4,8 @@
 //= require turbolinks
 //= require_tree .
 
-$(document).ready(function() {
+var ready;
+ready = function() {
   "use strict";
   $("#refs-show").click(function() {
     $(".references").slideDown( 450, function() {
@@ -18,4 +19,7 @@ $(document).ready(function() {
     });
     $(this).hide();
   });
-});
+};
+
+$(document).ready(ready);
+$(document).on('page:load', ready);
