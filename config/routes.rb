@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :session, :only => [:create], :defaults => { :format => :json }
   devise_for :users
   resources :blogs do
     resources :comments, :except => [:index, :show]
