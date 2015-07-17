@@ -28,6 +28,8 @@ Andrew Finstrom
 
 Heroku link: https://serene-lake-5625.herokuapp.com/
 
+Default admin login: 'admin@site.com' password: 'password'
+
 ### License ###
 This is free and unencumbered software released into the public domain.
 
