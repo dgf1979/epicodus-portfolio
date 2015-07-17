@@ -25,9 +25,9 @@ describe "reading a category" do
 end
 
 describe "the edit a category process" do
-  category = Category.create({ name: "Ruby" })
 
   it "edits a category" do
+    category = Category.create({ name: "Ruby" })
     visit edit_category_path(category)
     fill_in 'Name', :with => 'JavaScript'
     click_on 'Update Category'
@@ -35,6 +35,7 @@ describe "the edit a category process" do
   end
 
   it "fails to edit a category" do
+    category = Category.create({ name: "Ruby" })
     visit edit_category_path(category)
     fill_in 'Name', :with => ''
     click_on 'Update Category'
@@ -44,9 +45,8 @@ describe "the edit a category process" do
 end
 
 describe "the delete a category process" do
-  category = Category.create({ name: "Ruby" })
-
   it "should delete a category" do
+    category = Category.create({ name: "Ruby" })
     user = User.create({ email: "test@test.com", password: "password", admin: true })
     login_as user, :scope => :user
     visit category_path(category)

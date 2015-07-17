@@ -29,6 +29,8 @@ end
 
 group :test do
   gem 'shoulda-matchers'
+  gem 'database_cleaner'
+  gem 'poltergeist'
 end
 
 ruby "2.2.1"

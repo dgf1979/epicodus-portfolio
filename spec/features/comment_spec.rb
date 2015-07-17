@@ -1,10 +1,9 @@
 require 'rails_helper'
 require 'warden_helper'
 
-blog = Blog.create({ text: "What I Think" })
-
 describe "the add a comment process" do
   it "should add a comment" do
+    blog = Blog.create({ text: "What I Think" })
     user = User.create({ email: "test@test.com", password: "password" })
     login_as user, :scope => :user
     visit new_blog_comment_path(blog)
@@ -14,6 +13,7 @@ describe "the add a comment process" do
   end
 
   it "should error when no text is entered" do
+    blog = Blog.create({ text: "What I Think" })
     user = User.create({ email: "test@test.com", password: "password" })
     login_as user, :scope => :user
     visit new_blog_comment_path(blog)
@@ -24,6 +24,7 @@ end
 
 describe "the edit a comment process" do
   it "should modify the text of a comment" do
+    blog = Blog.create({ text: "What I Think" })
     user = User.create({ email: "test@test.com", password: "password" })
     comment = Comment.create({ text: "Never Read These", blog_id: blog.id, user_id: user.id })
     login_as user, :scope => :user
@@ -34,6 +35,7 @@ describe "the edit a comment process" do
   end
 
   it "should error when text is not provided" do
+    blog = Blog.create({ text: "What I Think" })
     user = User.create({ email: "test@test.com", password: "password" })
     login_as user, :scope => :user
     comment = Comment.create({ text: "Never Read These", blog_id: blog.id, user_id: user.id })

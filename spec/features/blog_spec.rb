@@ -25,9 +25,8 @@ describe "reading a blog" do
 end
 
 describe "the edit a blog post process" do
-  blog = Blog.create({ text: 'My Summer Vaction'})
-
   it "edits a blog" do
+    blog = Blog.create({ text: 'My Summer Vaction'})
     visit edit_blog_path(blog)
     fill_in 'Text', :with => 'My Summer Vaction'
     click_on 'Update Blog'
@@ -35,6 +34,7 @@ describe "the edit a blog post process" do
   end
 
   it "fails to edit a blog" do
+    blog = Blog.create({ text: 'My Summer Vaction'})
     visit edit_blog_path(blog)
     fill_in 'Text', :with => ''
     click_on 'Update Blog'
@@ -43,8 +43,8 @@ describe "the edit a blog post process" do
 end
 
 describe "the delete a blog post process" do
-  blog = Blog.create({ text: 'My Summer Vaction'})
   it "should delete a blog post" do
+    blog = Blog.create({ text: 'My Summer Vaction'})
     user = User.create({ email: "test@test.com", password: "password", admin: true })
     login_as user, :scope => :user
     visit blog_path(blog)
