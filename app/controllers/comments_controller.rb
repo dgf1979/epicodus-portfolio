@@ -27,10 +27,14 @@ class CommentsController < ApplicationController
 
   # PATCH/PUT /comments/1
   def update
-    if @comment.update(comment_params)
-      redirect_to @blog, notice: 'Comment was successfully updated.'
-    else
-      render :edit
+    respond_to do |format|
+      if @comment.update(comment_params)
+        format.html { redirect_to @blog, notice: 'Comment was successfully updated.' }
+        format.js { render js: "window.location.href = '/blogs/#{@blog.id}'" }
+      else
+        format.html { redirect_to @blog, notice: 'Comment update failed.' }
+        format.js { render js: "window.location.href = '/blogs/#{@blog.id}'" }
+      end
     end
   end
 
