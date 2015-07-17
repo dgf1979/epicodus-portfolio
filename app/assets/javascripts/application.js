@@ -22,7 +22,7 @@ ready = function() {
   });
 
   // set bootstrap 'active' class on the nav link for the current route.
-  routeParts = window.location.pathname.split('/');
+  var routeParts = window.location.pathname.split('/');
   $('ul.nav li a[href="/' + routeParts[1] + '"]').parent("li").addClass("active");
 };
 
