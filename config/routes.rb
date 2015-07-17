@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  post "session/timezone" => "session#set_timezone", :defaults => { :format => :json }
   devise_for :users
   resources :blogs do
     resources :comments, :except => [:index, :show]
