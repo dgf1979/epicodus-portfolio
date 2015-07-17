@@ -1,0 +1,17 @@
+<hr>
+<div class="comment">
+  At <span class="posted-on"><%= human_time(comment.created_at) %>
+    on <%= human_date(comment.created_at) %> </span>
+  <span class="author"><%= comment.user.email %></span> wrote:
+  <div class="text">
+    <%= comment.text %>
+  </div>
+  <% if user_signed_in? && current_user.id == comment.user.id %>
+  <div class="comment-edit">
+    <%= button_to "Delete", blog_comment_path(@blog, comment),
+        method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-warning btn-sm" %>
+
+    <%= button_to "Edit", edit_blog_comment_path(@blog, comment), method: :get, class: "btn btn-primary btn-sm" %>
+  </div>
+  <% end %>
+</div>

@@ -1,0 +1,4 @@
+console.log("coments/create.js.erb")
+$('#comment-modal').modal('hide')
+$("#comments").html("<%= j (render @blog.comments) %>");
+$("textarea[name='comment[text]']").val("");
